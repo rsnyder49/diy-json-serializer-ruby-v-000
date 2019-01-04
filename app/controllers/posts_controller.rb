@@ -6,6 +6,8 @@ class PostsController < ApplicationController
   end
 
   def show
+    @post = set_post
+    render :show
   end
 
   def new
